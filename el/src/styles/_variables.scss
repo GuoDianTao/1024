@@ -1,0 +1,12 @@
+// Global SCSS variables and mixins
+$primary-color: #060606;
+$accent-color: #c7c6ac;
+$radius: 8px;
+
+// Example mixin
+@mixin center-flex($direction: row, $justify: center, $align: center){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

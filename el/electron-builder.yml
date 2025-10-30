@@ -1,0 +1,20 @@
+appId: "com.example.3dgame"
+productName: "3D Game Project"
+files:
+  - "dist/**"
+  - "dist-electron/**"
+directories:
+  output: "release"
+mac:
+  target:
+    - dmg
+    - zip
+win:
+  target: "nsis"
+  icon: "assets/icon.ico"
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  runAfterFinish: true

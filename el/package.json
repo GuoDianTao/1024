@@ -1,0 +1,35 @@
+{
+  "name": "3d-game-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3D Game project built with Vite + Vue + Electron",
+  "author": "Your Name <you@example.com>",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "vite build && electron .",
+    "electron:build": "vite build && electron-builder",
+    "electron:build:mac": "vite build && electron-builder --mac",
+    "electron:build:win": "vite build && electron-builder --win --x64"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.0.0",
+    "gsap": "^3.12.2",
+    "three": "^0.154.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/three": "^0.154.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "electron": "^25.3.0",
+    "electron-builder": "^24.4.0",
+    "sass": "^1.93.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-electron": "^0.11.2",
+    "vite-plugin-electron-renderer": "^0.14.1",
+    "vue-router": "^4.6.3"
+  }
+}
